@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B593F8E92B1F2667002AF4D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F8E82B1F2667002AF4D9 /* AppDelegate.swift */; };
+		B593F8EB2B1F2667002AF4D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F8EA2B1F2667002AF4D9 /* SceneDelegate.swift */; };
+		B593F8ED2B1F2667002AF4D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F8EC2B1F2667002AF4D9 /* ViewController.swift */; };
+		B593F8F02B1F2667002AF4D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B593F8EE2B1F2667002AF4D9 /* Main.storyboard */; };
+		B593F8F22B1F266A002AF4D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B593F8F12B1F266A002AF4D9 /* Assets.xcassets */; };
+		B593F8F52B1F266A002AF4D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B593F8F32B1F266A002AF4D9 /* LaunchScreen.storyboard */; };
+		B593F8FD2B1F28ED002AF4D9 /* MortgageCalculatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F8FC2B1F28ED002AF4D9 /* MortgageCalculatorImpl.swift */; };
+		B593F8FF2B1F2ADC002AF4D9 /* UserMortgage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F8FE2B1F2ADC002AF4D9 /* UserMortgage.swift */; };
+		B593F9012B1F2C40002AF4D9 /* MortgageCalcResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F9002B1F2C40002AF4D9 /* MortgageCalcResult.swift */; };
+		B593F9032B1F4506002AF4D9 /* UserSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F9022B1F4506002AF4D9 /* UserSettingsManager.swift */; };
+		B593F9072B1F4A1F002AF4D9 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F9062B1F4A1F002AF4D9 /* InputViewController.swift */; };
+		B593F9092B1F4A88002AF4D9 /* OutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F9082B1F4A88002AF4D9 /* OutputViewController.swift */; };
+		B593F90B2B1F4B12002AF4D9 /* DiagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F90A2B1F4B12002AF4D9 /* DiagramViewController.swift */; };
+		B593F90D2B1F53A2002AF4D9 /* Double+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F90C2B1F53A2002AF4D9 /* Double+Rounding.swift */; };
+		B593F90F2B1F61E3002AF4D9 /* CheckBoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F90E2B1F61E3002AF4D9 /* CheckBoxButton.swift */; };
+		B593F9132B225952002AF4D9 /* Int+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F9122B225952002AF4D9 /* Int+Formatting.swift */; };
+		B593F95F2B26436E002AF4D9 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F95E2B26436E002AF4D9 /* Identifier.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B593F8E52B1F2667002AF4D9 /* MyMortgage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMortgage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B593F8E82B1F2667002AF4D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B593F8EA2B1F2667002AF4D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B593F8EC2B1F2667002AF4D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B593F8EF2B1F2667002AF4D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B593F8F12B1F266A002AF4D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B593F8F42B1F266A002AF4D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B593F8F62B1F266A002AF4D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B593F8FC2B1F28ED002AF4D9 /* MortgageCalculatorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortgageCalculatorImpl.swift; sourceTree = "<group>"; };
+		B593F8FE2B1F2ADC002AF4D9 /* UserMortgage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMortgage.swift; sourceTree = "<group>"; };
+		B593F9002B1F2C40002AF4D9 /* MortgageCalcResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortgageCalcResult.swift; sourceTree = "<group>"; };
+		B593F9022B1F4506002AF4D9 /* UserSettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsManager.swift; sourceTree = "<group>"; };
+		B593F9062B1F4A1F002AF4D9 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		B593F9082B1F4A88002AF4D9 /* OutputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputViewController.swift; sourceTree = "<group>"; };
+		B593F90A2B1F4B12002AF4D9 /* DiagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramViewController.swift; sourceTree = "<group>"; };
+		B593F90C2B1F53A2002AF4D9 /* Double+Rounding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Rounding.swift"; sourceTree = "<group>"; };
+		B593F90E2B1F61E3002AF4D9 /* CheckBoxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxButton.swift; sourceTree = "<group>"; };
+		B593F9122B225952002AF4D9 /* Int+Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Formatting.swift"; sourceTree = "<group>"; };
+		B593F95E2B26436E002AF4D9 /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B593F8E22B1F2667002AF4D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B593F8DC2B1F2667002AF4D9 = {
+			isa = PBXGroup;
+			children = (
+				B593F8E72B1F2667002AF4D9 /* MyMortgage */,
+				B593F8E62B1F2667002AF4D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B593F8E62B1F2667002AF4D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B593F8E52B1F2667002AF4D9 /* MyMortgage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B593F8E72B1F2667002AF4D9 /* MyMortgage */ = {
+			isa = PBXGroup;
+			children = (
+				B593F8E82B1F2667002AF4D9 /* AppDelegate.swift */,
+				B593F8EA2B1F2667002AF4D9 /* SceneDelegate.swift */,
+				B593F8EC2B1F2667002AF4D9 /* ViewController.swift */,
+				B593F8EE2B1F2667002AF4D9 /* Main.storyboard */,
+				B593F8F12B1F266A002AF4D9 /* Assets.xcassets */,
+				B593F8F32B1F266A002AF4D9 /* LaunchScreen.storyboard */,
+				B593F8F62B1F266A002AF4D9 /* Info.plist */,
+				B593F8FC2B1F28ED002AF4D9 /* MortgageCalculatorImpl.swift */,
+				B593F8FE2B1F2ADC002AF4D9 /* UserMortgage.swift */,
+				B593F9002B1F2C40002AF4D9 /* MortgageCalcResult.swift */,
+				B593F9022B1F4506002AF4D9 /* UserSettingsManager.swift */,
+				B593F9062B1F4A1F002AF4D9 /* InputViewController.swift */,
+				B593F9082B1F4A88002AF4D9 /* OutputViewController.swift */,
+				B593F90A2B1F4B12002AF4D9 /* DiagramViewController.swift */,
+				B593F90C2B1F53A2002AF4D9 /* Double+Rounding.swift */,
+				B593F90E2B1F61E3002AF4D9 /* CheckBoxButton.swift */,
+				B593F9122B225952002AF4D9 /* Int+Formatting.swift */,
+				B593F95E2B26436E002AF4D9 /* Identifier.swift */,
+			);
+			path = MyMortgage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B593F8E42B1F2667002AF4D9 /* MyMortgage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B593F8F92B1F266A002AF4D9 /* Build configuration list for PBXNativeTarget "MyMortgage" */;
+			buildPhases = (
+				B593F8E12B1F2667002AF4D9 /* Sources */,
+				B593F8E22B1F2667002AF4D9 /* Frameworks */,
+				B593F8E32B1F2667002AF4D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyMortgage;
+			productName = MyMortgage;
+			productReference = B593F8E52B1F2667002AF4D9 /* MyMortgage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B593F8DD2B1F2667002AF4D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B593F8E42B1F2667002AF4D9 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = B593F8E02B1F2667002AF4D9 /* Build configuration list for PBXProject "MyMortgage" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B593F8DC2B1F2667002AF4D9;
+			productRefGroup = B593F8E62B1F2667002AF4D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B593F8E42B1F2667002AF4D9 /* MyMortgage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B593F8E32B1F2667002AF4D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B593F8F52B1F266A002AF4D9 /* LaunchScreen.storyboard in Resources */,
+				B593F8F22B1F266A002AF4D9 /* Assets.xcassets in Resources */,
+				B593F8F02B1F2667002AF4D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B593F8E12B1F2667002AF4D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B593F90B2B1F4B12002AF4D9 /* DiagramViewController.swift in Sources */,
+				B593F8ED2B1F2667002AF4D9 /* ViewController.swift in Sources */,
+				B593F8FD2B1F28ED002AF4D9 /* MortgageCalculatorImpl.swift in Sources */,
+				B593F9032B1F4506002AF4D9 /* UserSettingsManager.swift in Sources */,
+				B593F9132B225952002AF4D9 /* Int+Formatting.swift in Sources */,
+				B593F9072B1F4A1F002AF4D9 /* InputViewController.swift in Sources */,
+				B593F90D2B1F53A2002AF4D9 /* Double+Rounding.swift in Sources */,
+				B593F9092B1F4A88002AF4D9 /* OutputViewController.swift in Sources */,
+				B593F8FF2B1F2ADC002AF4D9 /* UserMortgage.swift in Sources */,
+				B593F8E92B1F2667002AF4D9 /* AppDelegate.swift in Sources */,
+				B593F95F2B26436E002AF4D9 /* Identifier.swift in Sources */,
+				B593F8EB2B1F2667002AF4D9 /* SceneDelegate.swift in Sources */,
+				B593F90F2B1F61E3002AF4D9 /* CheckBoxButton.swift in Sources */,
+				B593F9012B1F2C40002AF4D9 /* MortgageCalcResult.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B593F8EE2B1F2667002AF4D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B593F8EF2B1F2667002AF4D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B593F8F32B1F266A002AF4D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B593F8F42B1F266A002AF4D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B593F8F72B1F266A002AF4D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B593F8F82B1F266A002AF4D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B593F8FA2B1F266A002AF4D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyMortgage/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.i-Company.MyMortgage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B593F8FB2B1F266A002AF4D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyMortgage/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.i-Company.MyMortgage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B593F8E02B1F2667002AF4D9 /* Build configuration list for PBXProject "MyMortgage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B593F8F72B1F266A002AF4D9 /* Debug */,
+				B593F8F82B1F266A002AF4D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B593F8F92B1F266A002AF4D9 /* Build configuration list for PBXNativeTarget "MyMortgage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B593F8FA2B1F266A002AF4D9 /* Debug */,
+				B593F8FB2B1F266A002AF4D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B593F8DD2B1F2667002AF4D9 /* Project object */;
+}
