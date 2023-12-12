@@ -46,8 +46,7 @@ final class InputViewController: UIViewController {
     
     private func showAlert(error: MortgateCalculatorError) {
         // TODO: Handle error
-        let alertController = UIAlertController(title: "Ошибка во входных данных",
-                                                message: "Введите реальные данные по ипотеке от продавца или от банка. Срок ипотеки от 0 до 30 лет, инфляция от 0 до 1000 % в год",
+        let alertController = UIAlertController(title: "Пожалуйста, введите корректные данные", message: "\(error.description)",
                                                 preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Ok", style: .default)
         alertController.addAction(okAction)

@@ -458,8 +458,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Эта опция в настоящий момент находится в разработке" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zK6-TP-2ml">
+                                <rect key="frame" x="50" y="418" width="314" height="50"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="tintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="F4e-Wz-tMN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3to-oB-UEn">
-                                <rect key="frame" x="177.5" y="678" width="59" height="28"/>
+                                <rect key="frame" x="177.5" y="678" width="59.5" height="28"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
@@ -481,7 +492,10 @@
                         <viewLayoutGuide key="safeArea" id="xrp-PN-aBb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="zK6-TP-2ml" firstAttribute="centerX" secondItem="dEf-Lo-DHX" secondAttribute="centerX" id="34E-if-gra"/>
+                            <constraint firstItem="zK6-TP-2ml" firstAttribute="leading" secondItem="dEf-Lo-DHX" secondAttribute="leading" constant="50" id="9ae-k3-nDh"/>
                             <constraint firstItem="3to-oB-UEn" firstAttribute="centerX" secondItem="dEf-Lo-DHX" secondAttribute="centerX" id="Pk4-Dp-jzg"/>
+                            <constraint firstItem="zK6-TP-2ml" firstAttribute="centerY" secondItem="dEf-Lo-DHX" secondAttribute="centerY" id="Vdk-sa-3Uj"/>
                             <constraint firstItem="xrp-PN-aBb" firstAttribute="bottom" secondItem="3to-oB-UEn" secondAttribute="bottom" constant="180" id="rXf-5x-UNY"/>
                         </constraints>
                     </view>
@@ -492,7 +506,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fvp-uc-sY7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2336" y="-312"/>
+            <point key="canvasLocation" x="2334.7826086956525" y="-312.05357142857139"/>
         </scene>
     </scenes>
     <resources>
@@ -501,6 +515,9 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
