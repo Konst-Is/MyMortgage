@@ -62,7 +62,7 @@
                                     </attributedString>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Ttk-n9-FDg" kind="show" id="qJs-We-2mx"/>
+                                    <action selector="didTapNextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UX3-gd-ILL"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Больше не показывать        " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rl-Oz-Sqi">
@@ -104,22 +104,22 @@
         <!--Input View Controller-->
         <scene sceneID="7bb-fq-hWS">
             <objects>
-                <viewController storyboardIdentifier="InputViewControllerIdetnifier" id="Ttk-n9-FDg" customClass="InputViewController" customModule="MyMortgage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InputViewControllerIdentifier" id="Ttk-n9-FDg" customClass="InputViewController" customModule="MyMortgage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JZf-MW-Igb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="o1e-pr-xbO">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите данные" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cxp-YB-Q9O">
-                                <rect key="frame" x="133" y="30" width="148.5" height="21.5"/>
+                                <rect key="frame" x="133" y="78" width="148.5" height="21.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="DI3-Ed-sLf">
-                                <rect key="frame" x="47" y="91.5" width="320" height="295"/>
+                                <rect key="frame" x="47" y="139.5" width="320" height="295"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="aTQ-h9-uW9">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
@@ -239,7 +239,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qg6-zH-zuQ">
-                                <rect key="frame" x="162.5" y="436.5" width="89" height="28"/>
+                                <rect key="frame" x="162.5" y="484.5" width="89" height="28"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
@@ -255,7 +255,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="calcButtonAction:" destination="Ttk-n9-FDg" eventType="touchUpInside" id="a9U-ea-2Oo"/>
-                                    <segue destination="3D4-2b-zsA" kind="show" identifier="OutputVCIdentifier" id="LxN-vV-qgs"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -291,16 +290,16 @@
         <!--Output View Controller-->
         <scene sceneID="zQK-FR-h1U">
             <objects>
-                <viewController id="3D4-2b-zsA" customClass="OutputViewController" customModule="MyMortgage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OutputViewControllerIdentifier" id="3D4-2b-zsA" customClass="OutputViewController" customModule="MyMortgage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bad-hc-lRa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="10i-sG-vY9">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="GVy-B1-Kdo">
-                                <rect key="frame" x="47" y="91.5" width="320" height="255"/>
+                                <rect key="frame" x="47" y="139.5" width="320" height="255"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="wwh-DL-EkB">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
@@ -377,7 +376,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1z-28-v3X">
-                                <rect key="frame" x="155.5" y="474.5" width="103.5" height="28"/>
+                                <rect key="frame" x="155.5" y="522.5" width="103.5" height="28"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
@@ -396,13 +395,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Результаты расчёта" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUP-hc-cBt">
-                                <rect key="frame" x="117" y="30" width="180.5" height="21.5"/>
+                                <rect key="frame" x="117" y="78" width="180.5" height="21.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdX-fI-jZn">
-                                <rect key="frame" x="162.5" y="396.5" width="89" height="28"/>
+                                <rect key="frame" x="162.5" y="444.5" width="89" height="28"/>
                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">

@@ -15,17 +15,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let vc = storyboard.instantiateViewController(withIdentifier: UserSettingsManager.missInformation
-                ? Identifier.inputVC
-                : Identifier.vc)
+        let vc: UIViewController
         
-        
+        if UserSettingsManager.isOnboardingPassed {
+            let mortgageCalculator: MortgageCalculator = MortgageCalculatorImpl()
+            let mortgageInputBuilder = MortgageInputBuilder(calculator: mortgageCalculator)
+            vc = mortgageInputBuilder.build()
+        } else {
+            let onboardingBuilder = OnboardingBuilder()
+            vc = onboardingBuilder.build()
+        }
         
         let navigationVC = UINavigationController(rootViewController: vc)
         
-
         navigationVC.setNavigationBarHidden(true, animated: false)
         window?.rootViewController = navigationVC
         window?.makeKeyAndVisible()

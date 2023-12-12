@@ -6,7 +6,7 @@ final class UserSettingsManager {
         static let missInformation = "missInformation"
     }
     
-    static var missInformation: Bool {
+    static var isOnboardingPassed: Bool {
         get {
             return UserDefaults.standard.bool(forKey: UserDefaultsKey.missInformation)
         }

@@ -9,7 +9,6 @@ import UIKit
 
 class DiagramViewController: UIViewController {
 
-    
     @IBOutlet weak var popButton: UIButton!
     
     override func viewDidLoad() {

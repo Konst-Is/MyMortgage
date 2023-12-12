@@ -1,15 +1,8 @@
-//
-//  OutputViewController.swift
-//  MyMortgage
-//
-//  Created by Константин on 05.12.2023.
-//
-
 import UIKit
 
 class OutputViewController: UIViewController {
     
-    var mortgageCalculator: MortgageCalculator! 
+    var mortgageCalculatorResult: MortgageCalculatorResult!
     
     @IBOutlet weak var popButton: UIButton!
     @IBOutlet weak var graphicButton: UIButton!
@@ -23,13 +16,9 @@ class OutputViewController: UIViewController {
         graphicButton.layer.cornerRadius = 10
         popButton.layer.cornerRadius = 10
         
-        mortgageCalculator = MortgageCalculatorImpl.shared
-        
-        let mortgageCalcResult = mortgageCalculator.mortgageCalcResult
-        
-        initialCostLabel.text = "\(mortgageCalcResult.costWithoutMortgage.formatted)"
-        mortgageCostLabel.text = "\(mortgageCalcResult.totalCostWithoutInflation.formatted)"
-        inflatioCostLabel.text = "\(mortgageCalcResult.totalCostAdjustedForInflation.formatted)"
+        initialCostLabel.text = "\(mortgageCalculatorResult.costWithoutMortgage.formatted)"
+        mortgageCostLabel.text = "\(mortgageCalculatorResult.totalCostWithoutInflation.formatted)"
+        inflatioCostLabel.text = "\(mortgageCalculatorResult.totalCostAdjustedForInflation.formatted)"
         
     }
     

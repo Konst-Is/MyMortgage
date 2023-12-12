@@ -6,15 +6,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var infoView: UIView!
     @IBOutlet weak var settingLabel: UILabel!
-    
-    var mortgageCalculator: MortgageCalculator!
-    
+        
     private let checkbox = CheckBoxButton(frame: CGRect(x: 130, y: 600, width: 30, height: 30))
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("Больше не показывать первый экран? \(UserSettingsManager.missInformation)")
+        print("Больше не показывать первый экран? \(UserSettingsManager.isOnboardingPassed)")
         
         infoView.layer.cornerRadius = 10
         nextButton.layer.cornerRadius = 10
@@ -39,17 +37,24 @@ class ViewController: UIViewController {
         super.viewDidLayoutSubviews()
         
         checkbox.translatesAutoresizingMaskIntoConstraints = false
-                NSLayoutConstraint.activate([
-                    checkbox.topAnchor.constraint(equalTo: nextButton.bottomAnchor, constant: 34),
-                    checkbox.trailingAnchor.constraint(equalTo: settingLabel.leadingAnchor, constant: 0),
-                    checkbox.widthAnchor.constraint(equalToConstant: 30),
-                    checkbox.heightAnchor.constraint(equalToConstant: 30)
-                ])
+        NSLayoutConstraint.activate([
+            checkbox.topAnchor.constraint(equalTo: nextButton.bottomAnchor, constant: 34),
+            checkbox.trailingAnchor.constraint(equalTo: settingLabel.leadingAnchor, constant: 0),
+            checkbox.widthAnchor.constraint(equalToConstant: 30),
+            checkbox.heightAnchor.constraint(equalToConstant: 30)
+        ])
+    }
+    
+    @IBAction func didTapNextButton(_ sender: UIButton) {
+        let mortgageCalculator: MortgageCalculator = MortgageCalculatorImpl()
+        let viewController = MortgageInputBuilder(calculator: mortgageCalculator).build()
+        viewController.mortgageCalculator = mortgageCalculator
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     @objc func didTapCheckbox() {
         checkbox.toggle()
-        UserSettingsManager.missInformation = checkbox.isChecked
+        UserSettingsManager.isOnboardingPassed = checkbox.isChecked
     }
 }
 
