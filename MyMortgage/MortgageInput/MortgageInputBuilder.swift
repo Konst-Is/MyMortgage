@@ -1,6 +1,7 @@
 import UIKit
 
 final class MortgageInputBuilder: BaseBuilder {
+    
     weak var calculator: MortgageCalculator!
     
     init(calculator: MortgageCalculator) {

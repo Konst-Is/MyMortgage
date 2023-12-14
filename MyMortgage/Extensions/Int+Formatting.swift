@@ -1,6 +1,7 @@
 import Foundation
 
 extension Int {
+    
     var formatted: String {
         var str = ""
         var count = 0
@@ -15,4 +16,5 @@ extension Int {
         }
         return self < 0 ? "-" + str : str
     }
+    
 }

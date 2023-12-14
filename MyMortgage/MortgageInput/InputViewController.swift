@@ -18,9 +18,11 @@ final class InputViewController: UIViewController {
         super.viewDidLoad()
         
         calcButton.layer.cornerRadius = 10
+        
     }
     
     @IBAction func calcButtonAction(_ sender: UIButton) {
+        
         let userMortgage = UserMortgage(costWithoutMortgage: extractInputNumber(input: initialCostTextField),
                                         initialPayment: extractInputNumber(input: initialPaymentTextField),
                                         termOfMortgage: extractInputNumber(input: termOfMortageTextField),
@@ -41,17 +43,21 @@ final class InputViewController: UIViewController {
     }
     
     private func extractInputNumber(input: UITextField) -> Int {
+       
         return Int(input.text ?? "0") ?? 0
+        
     }
     
     private func showAlert(error: MortgateCalculatorError) {
-        // TODO: Handle error
+        
         let alertController = UIAlertController(title: "Пожалуйста, введите корректные данные", message: "\(error.description)",
                                                 preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Ok", style: .default)
         alertController.addAction(okAction)
         present(alertController, animated: true)
+        
     }
+    
 }
 
 

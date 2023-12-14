@@ -3,7 +3,9 @@ import Foundation
 final class UserSettingsManager {
     
     private enum UserDefaultsKey {
+        
         static let missInformation = "missInformation"
+        
     }
     
     static var isOnboardingPassed: Bool {

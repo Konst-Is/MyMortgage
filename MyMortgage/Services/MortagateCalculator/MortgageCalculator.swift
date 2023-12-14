@@ -53,11 +53,14 @@ final class MortgageCalculatorImpl: MortgageCalculator {
         }
         
         let totalCostWithoutInflation = userMortgage.initialPayment + userMortgage.termOfMortgage * MortgageCalculatorSettings.monthInYear * userMortgage.monthlyPayment
+        
         var totalCostAdjustedForInflation = userMortgage.termOfMortgage == 0
         ? userMortgage.costWithoutMortgage
         : userMortgage.initialPayment + MortgageCalculatorSettings.monthInYear * userMortgage.monthlyPayment
+        
         var monthlyPaymentAdjustedForInflation = userMortgage.monthlyPayment
         var monthlyPaymentsAdjustedForInflation = [monthlyPaymentAdjustedForInflation]
+        
         if userMortgage.termOfMortgage > 1 {
             for _ in 2...userMortgage.termOfMortgage {
                 monthlyPaymentAdjustedForInflation = Int(Double(monthlyPaymentAdjustedForInflation) / (1.0 + Double(userMortgage.inflation) / 100.0))
@@ -67,9 +70,9 @@ final class MortgageCalculatorImpl: MortgageCalculator {
         }
         
         return .success(MortgageCalculatorResult(costWithoutMortgage: userMortgage.costWithoutMortgage,
-                                           totalCostWithoutInflation: totalCostWithoutInflation,
-                                           totalCostAdjustedForInflation: totalCostAdjustedForInflation,
-                                           monthlyPaymentsAdjustedForInflation: monthlyPaymentsAdjustedForInflation))
+                                                 totalCostWithoutInflation: totalCostWithoutInflation,
+                                                 totalCostAdjustedForInflation: totalCostAdjustedForInflation,
+                                                 monthlyPaymentsAdjustedForInflation: monthlyPaymentsAdjustedForInflation))
     }
     
     private func validate(userMortgage: UserMortgage) -> MortgateCalculatorError? {

@@ -47,15 +47,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVh-iS-c0C">
-                                <rect key="frame" x="177" y="669" width="60" height="28"/>
+                                <rect key="frame" x="142" y="669" width="130" height="32.5"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="RiX-oi-Qvk"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Далее">
                                             <attributes>
                                                 <color key="NSColor" red="0.95976512980723006" green="0.98511601263128679" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <font key="NSFont" size="16" name="Helvetica"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -66,7 +69,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Больше не показывать        " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rl-Oz-Sqi">
-                                <rect key="frame" x="157" y="737" width="161" height="14.5"/>
+                                <rect key="frame" x="122" y="741.5" width="161" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -238,21 +241,24 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qg6-zH-zuQ">
-                                <rect key="frame" x="162.5" y="484.5" width="89" height="28"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qg6-zH-zuQ">
+                                <rect key="frame" x="142" y="484.5" width="130" height="30.5"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="QWu-iT-inm"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Рассчитать">
                                             <attributes>
-                                                <color key="NSColor" red="0.95976512980723006" green="0.98511601263128679" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="16" name="Helvetica"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
-                                </buttonConfiguration>
+                                </state>
                                 <connections>
                                     <action selector="calcButtonAction:" destination="Ttk-n9-FDg" eventType="touchUpInside" id="a9U-ea-2Oo"/>
                                 </connections>
@@ -376,15 +382,18 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1z-28-v3X">
-                                <rect key="frame" x="155.5" y="522.5" width="103.5" height="28"/>
+                                <rect key="frame" x="142" y="526.5" width="130" height="32.5"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="wU2-mM-C9y"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Новый расчёт">
                                             <attributes>
                                                 <color key="NSColor" red="0.95976512980723006" green="0.98511601263128679" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <font key="NSFont" size="16" name="Helvetica"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -401,22 +410,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdX-fI-jZn">
-                                <rect key="frame" x="162.5" y="444.5" width="89" height="28"/>
-                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Диаграммы">
-                                            <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="12" name="Helvetica"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
+                                <rect key="frame" x="142" y="444.5" width="130" height="32"/>
+                                <color key="backgroundColor" red="0.27451141074148089" green="0.37895302597474256" blue="0.57416242360000003" alpha="0.82376088527654179" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="hzZ-Sh-4Bc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Диаграммы"/>
                                 <connections>
-                                    <segue destination="w1Q-gA-HYH" kind="show" id="WGD-oT-nVo"/>
+                                    <action selector="showChartButtonAction:" destination="3D4-2b-zsA" eventType="touchUpInside" id="Djc-Ts-deI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -453,32 +456,39 @@
         <!--Diagram View Controller-->
         <scene sceneID="whu-AZ-4Pb">
             <objects>
-                <viewController id="w1Q-gA-HYH" customClass="DiagramViewController" customModule="MyMortgage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DiagramViewController" id="w1Q-gA-HYH" customClass="DiagramViewController" customModule="MyMortgage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dEf-Lo-DHX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Эта опция в настоящий момент находится в разработке" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zK6-TP-2ml">
-                                <rect key="frame" x="50" y="418" width="314" height="50"/>
-                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" systemColor="tintColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cтоимость недвижимости" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJD-XJ-xwr">
+                                <rect key="frame" x="106.5" y="78" width="201" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Динамика ежемесячного платежа по годам с учётом инфляции" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPu-He-rO0">
+                                <rect key="frame" x="20" y="407" width="384" height="52"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="F4e-Wz-tMN"/>
+                                    <constraint firstAttribute="height" constant="52" id="25W-qO-SNu"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3to-oB-UEn">
-                                <rect key="frame" x="177.5" y="678" width="59.5" height="28"/>
+                                <rect key="frame" x="142" y="799.5" width="130" height="32.5"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="Ks7-40-361"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Назад">
                                             <attributes>
                                                 <color key="NSColor" red="0.95976512980723006" green="0.98511601263128679" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <font key="NSFont" size="16" name="Helvetica"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -492,16 +502,20 @@
                         <viewLayoutGuide key="safeArea" id="xrp-PN-aBb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="zK6-TP-2ml" firstAttribute="centerX" secondItem="dEf-Lo-DHX" secondAttribute="centerX" id="34E-if-gra"/>
-                            <constraint firstItem="zK6-TP-2ml" firstAttribute="leading" secondItem="dEf-Lo-DHX" secondAttribute="leading" constant="50" id="9ae-k3-nDh"/>
+                            <constraint firstItem="bPu-He-rO0" firstAttribute="leading" secondItem="dEf-Lo-DHX" secondAttribute="leadingMargin" id="0j9-V1-g4b"/>
+                            <constraint firstItem="xrp-PN-aBb" firstAttribute="trailing" secondItem="bPu-He-rO0" secondAttribute="trailing" constant="10" id="8Ni-ZX-caO"/>
                             <constraint firstItem="3to-oB-UEn" firstAttribute="centerX" secondItem="dEf-Lo-DHX" secondAttribute="centerX" id="Pk4-Dp-jzg"/>
-                            <constraint firstItem="zK6-TP-2ml" firstAttribute="centerY" secondItem="dEf-Lo-DHX" secondAttribute="centerY" id="Vdk-sa-3Uj"/>
-                            <constraint firstItem="xrp-PN-aBb" firstAttribute="bottom" secondItem="3to-oB-UEn" secondAttribute="bottom" constant="180" id="rXf-5x-UNY"/>
+                            <constraint firstItem="xJD-XJ-xwr" firstAttribute="top" secondItem="xrp-PN-aBb" secondAttribute="top" constant="30" id="Pqd-lk-wdy"/>
+                            <constraint firstItem="bPu-He-rO0" firstAttribute="top" secondItem="dEf-Lo-DHX" secondAttribute="top" constant="407" id="aIH-9h-6LR"/>
+                            <constraint firstItem="xJD-XJ-xwr" firstAttribute="centerX" secondItem="3to-oB-UEn" secondAttribute="centerX" id="pVj-BW-ffC"/>
+                            <constraint firstItem="xrp-PN-aBb" firstAttribute="bottom" secondItem="3to-oB-UEn" secondAttribute="bottom" constant="30" id="rXf-5x-UNY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pp0-N1-9XL"/>
                     <connections>
+                        <outlet property="bottomLabel" destination="bPu-He-rO0" id="fAB-Wi-mxh"/>
                         <outlet property="popButton" destination="3to-oB-UEn" id="DUI-Pu-lPm"/>
+                        <outlet property="topLabel" destination="xJD-XJ-xwr" id="2DJ-lD-SUx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fvp-uc-sY7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -515,9 +529,6 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>

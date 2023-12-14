@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5722FCB2B2B51EF006D0FAA /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = B5722FCA2B2B51EF006D0FAA /* DGCharts */; };
+		B5722FCD2B2B6DA6006D0FAA /* DiagramBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5722FCC2B2B6DA6006D0FAA /* DiagramBuilder.swift */; };
 		B593F8E92B1F2667002AF4D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F8E82B1F2667002AF4D9 /* AppDelegate.swift */; };
 		B593F8EB2B1F2667002AF4D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F8EA2B1F2667002AF4D9 /* SceneDelegate.swift */; };
 		B593F8ED2B1F2667002AF4D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F8EC2B1F2667002AF4D9 /* ViewController.swift */; };
@@ -31,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B5722FCC2B2B6DA6006D0FAA /* DiagramBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramBuilder.swift; sourceTree = "<group>"; };
 		B593F8E52B1F2667002AF4D9 /* MyMortgage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMortgage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B593F8E82B1F2667002AF4D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B593F8EA2B1F2667002AF4D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5722FCB2B2B51EF006D0FAA /* DGCharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +105,7 @@
 				B593F8F62B1F266A002AF4D9 /* Info.plist */,
 				B593F90A2B1F4B12002AF4D9 /* DiagramViewController.swift */,
 				B593F95E2B26436E002AF4D9 /* Constants.swift */,
+				B5722FCC2B2B6DA6006D0FAA /* DiagramBuilder.swift */,
 			);
 			path = MyMortgage;
 			sourceTree = "<group>";
@@ -192,6 +197,9 @@
 			dependencies = (
 			);
 			name = MyMortgage;
+			packageProductDependencies = (
+				B5722FCA2B2B51EF006D0FAA /* DGCharts */,
+			);
 			productName = MyMortgage;
 			productReference = B593F8E52B1F2667002AF4D9 /* MyMortgage.app */;
 			productType = "com.apple.product-type.application";
@@ -220,6 +228,9 @@
 				Base,
 			);
 			mainGroup = B593F8DC2B1F2667002AF4D9;
+			packageReferences = (
+				B5722FC92B2B51EF006D0FAA /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = B593F8E62B1F2667002AF4D9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,6 +271,7 @@
 				B593F9722B28654F002AF4D9 /* MortgageInputBuilder.swift in Sources */,
 				B593F8FF2B1F2ADC002AF4D9 /* UserMortgage.swift in Sources */,
 				B593F8E92B1F2667002AF4D9 /* AppDelegate.swift in Sources */,
+				B5722FCD2B2B6DA6006D0FAA /* DiagramBuilder.swift in Sources */,
 				B593F95F2B26436E002AF4D9 /* Constants.swift in Sources */,
 				B593F9742B28681C002AF4D9 /* OnboardingBuilder.swift in Sources */,
 				B593F8EB2B1F2667002AF4D9 /* SceneDelegate.swift in Sources */,
@@ -486,6 +498,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B5722FC92B2B51EF006D0FAA /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B5722FCA2B2B51EF006D0FAA /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5722FC92B2B51EF006D0FAA /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B593F8DD2B1F2667002AF4D9 /* Project object */;
 }
