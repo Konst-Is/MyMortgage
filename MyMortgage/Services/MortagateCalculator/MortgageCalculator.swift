@@ -2,6 +2,7 @@ import Foundation
 
 enum MortgateCalculatorError: Error {
     
+    case noData
     case maxCostExceeded(maxCost: Int)
     case incorrectInitialPayment
     case termOfMortgageExceeded(maxTerm: Int)
@@ -14,6 +15,7 @@ extension MortgateCalculatorError: CustomStringConvertible {
     
     var description: String {
         switch self {
+        case .noData: return "Вы не указали стоимость квартиры без ипотеки"
         case .maxCostExceeded(let maxCost):
             return "Cтоимость недвижимости без ипотеки превышает предельную для данной программы - \(maxCost) руб."
         case .incorrectInitialPayment:
@@ -52,7 +54,9 @@ final class MortgageCalculatorImpl: MortgageCalculator {
             return .failure(error)
         }
         
-        let totalCostWithoutInflation = userMortgage.initialPayment + userMortgage.termOfMortgage * MortgageCalculatorSettings.monthInYear * userMortgage.monthlyPayment
+        let totalCostWithoutInflation = userMortgage.initialPayment == 0 && userMortgage.monthlyPayment == 0
+        ? userMortgage.costWithoutMortgage
+        : userMortgage.initialPayment + userMortgage.termOfMortgage * MortgageCalculatorSettings.monthInYear * userMortgage.monthlyPayment
         
         var totalCostAdjustedForInflation = userMortgage.termOfMortgage == 0
         ? userMortgage.costWithoutMortgage
@@ -77,7 +81,11 @@ final class MortgageCalculatorImpl: MortgageCalculator {
     
     private func validate(userMortgage: UserMortgage) -> MortgateCalculatorError? {
         
-        guard (0...MortgageCalculatorSettings.maxCost).contains(userMortgage.costWithoutMortgage) else {
+        guard userMortgage.costWithoutMortgage != 0 else {
+            return .noData
+        }
+        
+        guard (1...MortgageCalculatorSettings.maxCost).contains(userMortgage.costWithoutMortgage) else {
             return .maxCostExceeded(maxCost: MortgageCalculatorSettings.maxCost)
         }
         

@@ -242,7 +242,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qg6-zH-zuQ">
-                                <rect key="frame" x="142" y="484.5" width="130" height="30.5"/>
+                                <rect key="frame" x="142" y="494.5" width="130" height="30.5"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="QWu-iT-inm"/>
@@ -271,7 +271,7 @@
                             <constraint firstItem="DI3-Ed-sLf" firstAttribute="centerX" secondItem="JZf-MW-Igb" secondAttribute="centerX" id="CwX-Ye-VAc"/>
                             <constraint firstItem="o1e-pr-xbO" firstAttribute="top" secondItem="JZf-MW-Igb" secondAttribute="top" id="ZMN-2m-P1x"/>
                             <constraint firstAttribute="bottom" secondItem="o1e-pr-xbO" secondAttribute="bottom" id="dRl-KR-luA"/>
-                            <constraint firstItem="qg6-zH-zuQ" firstAttribute="top" secondItem="5nS-FN-eUM" secondAttribute="bottom" constant="50" id="e51-EI-YW3"/>
+                            <constraint firstItem="qg6-zH-zuQ" firstAttribute="top" secondItem="5nS-FN-eUM" secondAttribute="bottom" constant="60" id="e51-EI-YW3"/>
                             <constraint firstItem="o1e-pr-xbO" firstAttribute="leading" secondItem="JZf-MW-Igb" secondAttribute="leading" id="fes-ow-JNb"/>
                             <constraint firstItem="Cxp-YB-Q9O" firstAttribute="centerX" secondItem="JZf-MW-Igb" secondAttribute="centerX" id="g3D-L1-SrQ"/>
                             <constraint firstItem="Cxp-YB-Q9O" firstAttribute="top" secondItem="CDT-29-CKV" secondAttribute="top" constant="30" id="jkG-vD-6uY"/>
@@ -304,14 +304,14 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="10i-sG-vY9">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="GVy-B1-Kdo">
-                                <rect key="frame" x="47" y="139.5" width="320" height="255"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KkG-bw-0PV">
+                                <rect key="frame" x="57" y="139.5" width="300" height="208"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="wwh-DL-EkB">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="35"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Стоимость квартиры без учёта ипотеки" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rt-qw-od2">
-                                                <rect key="frame" x="0.0" y="0.0" width="160" height="35"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="140" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="160" id="Gu2-qk-wYP"/>
                                                     <constraint firstAttribute="height" constant="35" id="xwv-wK-t4s"/>
@@ -321,7 +321,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20000000" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ea8-UF-u26">
-                                                <rect key="frame" x="190" y="0.0" width="130" height="17"/>
+                                                <rect key="frame" x="170" y="0.0" width="130" height="17"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="130" id="FWv-7O-Zpl"/>
                                                 </constraints>
@@ -331,11 +331,19 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TYh-V8-aCv">
+                                        <rect key="frame" x="0.0" y="45" width="300" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="Y1M-Gi-IV8"/>
+                                            <constraint firstAttribute="height" constant="1" id="s7a-JR-qgI"/>
+                                        </constraints>
+                                    </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="IjM-Ar-hCG">
-                                        <rect key="frame" x="0.0" y="85" width="320" height="60"/>
+                                        <rect key="frame" x="0.0" y="56" width="300" height="60"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Стоимость квартиры с  ипотекой и без учёта инфляции" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGM-cs-qHJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="160" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="140" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="160" id="0Lz-FS-XyV"/>
                                                     <constraint firstAttribute="height" constant="60" id="F1D-FV-wrm"/>
@@ -345,7 +353,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30000000" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPc-qa-UFy">
-                                                <rect key="frame" x="190" y="21.5" width="130" height="17"/>
+                                                <rect key="frame" x="170" y="21.5" width="130" height="17"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="130" id="qOV-An-Pmm"/>
                                                 </constraints>
@@ -355,11 +363,19 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GO4-ur-f0T">
+                                        <rect key="frame" x="0.0" y="126" width="300" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="UJW-YF-ei4"/>
+                                            <constraint firstAttribute="width" constant="300" id="ms8-Fl-haW"/>
+                                        </constraints>
+                                    </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="CRn-Rb-sDj">
-                                        <rect key="frame" x="0.0" y="195" width="320" height="60"/>
+                                        <rect key="frame" x="0.0" y="137" width="300" height="60"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Стоимость квартиры с ипотекой и с учётом инфляции" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yma-Lf-1FW">
-                                                <rect key="frame" x="0.0" y="0.0" width="160" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="140" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="160" id="LeV-ax-2N5"/>
                                                     <constraint firstAttribute="height" constant="60" id="a8j-Dg-a73"/>
@@ -369,7 +385,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15000000" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmB-ee-Vn9">
-                                                <rect key="frame" x="190" y="21.5" width="130" height="17"/>
+                                                <rect key="frame" x="170" y="21.5" width="130" height="17"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="130" id="bRd-Vy-PXW"/>
                                                 </constraints>
@@ -379,10 +395,18 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VpC-Nf-c6f">
+                                        <rect key="frame" x="0.0" y="207" width="300" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="Fll-aH-NO8"/>
+                                            <constraint firstAttribute="width" constant="300" id="YXY-0h-9oL"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1z-28-v3X">
-                                <rect key="frame" x="142" y="526.5" width="130" height="32.5"/>
+                                <rect key="frame" x="142" y="499.5" width="130" height="32.5"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="wU2-mM-C9y"/>
@@ -410,7 +434,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdX-fI-jZn">
-                                <rect key="frame" x="142" y="444.5" width="130" height="32"/>
+                                <rect key="frame" x="142" y="407.5" width="130" height="32"/>
                                 <color key="backgroundColor" systemColor="systemCyanColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="hzZ-Sh-4Bc"/>
@@ -427,17 +451,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="10i-sG-vY9" firstAttribute="leading" secondItem="Bad-hc-lRa" secondAttribute="leading" id="1lT-8y-WWW"/>
-                            <constraint firstItem="CdX-fI-jZn" firstAttribute="top" secondItem="GVy-B1-Kdo" secondAttribute="bottom" constant="50" id="3M2-Yr-xrz"/>
                             <constraint firstItem="10i-sG-vY9" firstAttribute="top" secondItem="Bad-hc-lRa" secondAttribute="top" id="4C8-dX-RCA"/>
                             <constraint firstAttribute="trailing" secondItem="10i-sG-vY9" secondAttribute="trailing" id="5kQ-Gi-uZ5"/>
-                            <constraint firstItem="CdX-fI-jZn" firstAttribute="centerX" secondItem="Bad-hc-lRa" secondAttribute="centerX" id="Kye-kX-prS"/>
-                            <constraint firstItem="GVy-B1-Kdo" firstAttribute="centerX" secondItem="Bad-hc-lRa" secondAttribute="centerX" id="Zjb-aQ-tHk"/>
+                            <constraint firstItem="KkG-bw-0PV" firstAttribute="centerX" secondItem="Bad-hc-lRa" secondAttribute="centerX" id="70c-M0-IaO"/>
+                            <constraint firstItem="CdX-fI-jZn" firstAttribute="top" secondItem="KkG-bw-0PV" secondAttribute="bottom" constant="60" id="AC7-wE-xbz"/>
+                            <constraint firstItem="YUP-hc-cBt" firstAttribute="centerX" secondItem="Bad-hc-lRa" secondAttribute="centerX" id="BaE-bu-LfS"/>
                             <constraint firstAttribute="bottom" secondItem="10i-sG-vY9" secondAttribute="bottom" id="ZlF-5e-jAw"/>
-                            <constraint firstItem="k1z-28-v3X" firstAttribute="top" secondItem="CdX-fI-jZn" secondAttribute="bottom" constant="50" id="ZpY-2q-Zqj"/>
+                            <constraint firstItem="k1z-28-v3X" firstAttribute="top" secondItem="CdX-fI-jZn" secondAttribute="bottom" constant="60" id="ZpY-2q-Zqj"/>
+                            <constraint firstItem="k1z-28-v3X" firstAttribute="centerX" secondItem="Bad-hc-lRa" secondAttribute="centerX" id="aCn-D1-SJS"/>
                             <constraint firstItem="YUP-hc-cBt" firstAttribute="top" secondItem="fhT-OQ-Kbp" secondAttribute="top" constant="30" id="cgW-hd-7eg"/>
-                            <constraint firstItem="YUP-hc-cBt" firstAttribute="centerX" secondItem="Bad-hc-lRa" secondAttribute="centerX" id="hgh-4u-Xps"/>
-                            <constraint firstItem="k1z-28-v3X" firstAttribute="centerX" secondItem="Bad-hc-lRa" secondAttribute="centerX" id="q17-DK-TjP"/>
-                            <constraint firstItem="GVy-B1-Kdo" firstAttribute="top" secondItem="YUP-hc-cBt" secondAttribute="bottom" constant="40" id="sOT-i1-Pg2"/>
+                            <constraint firstItem="CdX-fI-jZn" firstAttribute="centerX" secondItem="Bad-hc-lRa" secondAttribute="centerX" id="ePg-z9-Epb"/>
+                            <constraint firstItem="KkG-bw-0PV" firstAttribute="top" secondItem="YUP-hc-cBt" secondAttribute="bottom" constant="40" id="gBz-ZA-HPb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="i9A-8m-Ail"/>
@@ -464,7 +488,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cтоимость недвижимости" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJD-XJ-xwr">
                                 <rect key="frame" x="106.5" y="78" width="201" height="19.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Динамика ежемесячного платежа по годам с учётом инфляции" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPu-He-rO0">
@@ -473,7 +497,7 @@
                                     <constraint firstAttribute="height" constant="52" id="25W-qO-SNu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3to-oB-UEn">
@@ -533,6 +557,9 @@
         </systemColor>
         <systemColor name="systemCyanColor">
             <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
