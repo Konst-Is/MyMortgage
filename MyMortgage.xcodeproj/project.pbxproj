@@ -80,6 +80,29 @@
 			path = Diagram;
 			sourceTree = "<group>";
 		};
+		B5722FEF2B2CA3E0006D0FAA /* ApplicationLifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				B593F8E82B1F2667002AF4D9 /* AppDelegate.swift */,
+				B593F8EA2B1F2667002AF4D9 /* SceneDelegate.swift */,
+			);
+			path = ApplicationLifecycle;
+			sourceTree = "<group>";
+		};
+		B5722FF02B2CA53A006D0FAA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B5722FF12B2CA54B006D0FAA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		B593F8DC2B1F2667002AF4D9 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +122,8 @@
 		B593F8E72B1F2667002AF4D9 /* MyMortgage */ = {
 			isa = PBXGroup;
 			children = (
+				B5722FF02B2CA53A006D0FAA /* Sources */,
+				B5722FF12B2CA54B006D0FAA /* Resources */,
 				B593F96C2B286077002AF4D9 /* Services */,
 				B593F9772B287487002AF4D9 /* Common */,
 				B593F96A2B28600F002AF4D9 /* Onboarding */,
@@ -107,8 +132,7 @@
 				B5722FCE2B2C7D9B006D0FAA /* Diagram */,
 				B593F96E2B28610E002AF4D9 /* Extensions */,
 				B593F96F2B286127002AF4D9 /* UIComponents */,
-				B593F8E82B1F2667002AF4D9 /* AppDelegate.swift */,
-				B593F8EA2B1F2667002AF4D9 /* SceneDelegate.swift */,
+				B5722FEF2B2CA3E0006D0FAA /* ApplicationLifecycle */,
 				B593F8EE2B1F2667002AF4D9 /* Main.storyboard */,
 				B593F8F12B1F266A002AF4D9 /* Assets.xcassets */,
 				B593F8F32B1F266A002AF4D9 /* LaunchScreen.storyboard */,

@@ -305,13 +305,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KkG-bw-0PV">
-                                <rect key="frame" x="57" y="139.5" width="300" height="208"/>
+                                <rect key="frame" x="47" y="139.5" width="320" height="208"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="wwh-DL-EkB">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="35"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Стоимость квартиры без учёта ипотеки" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rt-qw-od2">
-                                                <rect key="frame" x="0.0" y="0.0" width="140" height="35"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="160" id="Gu2-qk-wYP"/>
                                                     <constraint firstAttribute="height" constant="35" id="xwv-wK-t4s"/>
@@ -321,7 +321,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20000000" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ea8-UF-u26">
-                                                <rect key="frame" x="170" y="0.0" width="130" height="17"/>
+                                                <rect key="frame" x="190" y="0.0" width="130" height="17"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="130" id="FWv-7O-Zpl"/>
                                                 </constraints>
@@ -332,7 +332,7 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TYh-V8-aCv">
-                                        <rect key="frame" x="0.0" y="45" width="300" height="1"/>
+                                        <rect key="frame" x="0.0" y="45" width="320" height="1"/>
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="Y1M-Gi-IV8"/>
@@ -340,10 +340,10 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="IjM-Ar-hCG">
-                                        <rect key="frame" x="0.0" y="56" width="300" height="60"/>
+                                        <rect key="frame" x="0.0" y="56" width="320" height="60"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Стоимость квартиры с  ипотекой и без учёта инфляции" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGM-cs-qHJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="140" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="160" id="0Lz-FS-XyV"/>
                                                     <constraint firstAttribute="height" constant="60" id="F1D-FV-wrm"/>
@@ -353,7 +353,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30000000" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPc-qa-UFy">
-                                                <rect key="frame" x="170" y="21.5" width="130" height="17"/>
+                                                <rect key="frame" x="190" y="21.5" width="130" height="17"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="130" id="qOV-An-Pmm"/>
                                                 </constraints>
@@ -364,7 +364,7 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GO4-ur-f0T">
-                                        <rect key="frame" x="0.0" y="126" width="300" height="1"/>
+                                        <rect key="frame" x="0.0" y="126" width="320" height="1"/>
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="UJW-YF-ei4"/>
@@ -372,10 +372,10 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="CRn-Rb-sDj">
-                                        <rect key="frame" x="0.0" y="137" width="300" height="60"/>
+                                        <rect key="frame" x="0.0" y="137" width="320" height="60"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Стоимость квартиры с ипотекой и с учётом инфляции" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yma-Lf-1FW">
-                                                <rect key="frame" x="0.0" y="0.0" width="140" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="160" id="LeV-ax-2N5"/>
                                                     <constraint firstAttribute="height" constant="60" id="a8j-Dg-a73"/>
@@ -385,7 +385,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15000000" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmB-ee-Vn9">
-                                                <rect key="frame" x="170" y="21.5" width="130" height="17"/>
+                                                <rect key="frame" x="190" y="21.5" width="130" height="17"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="130" id="bRd-Vy-PXW"/>
                                                 </constraints>
@@ -396,7 +396,7 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VpC-Nf-c6f">
-                                        <rect key="frame" x="0.0" y="207" width="300" height="1"/>
+                                        <rect key="frame" x="0.0" y="207" width="320" height="1"/>
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="Fll-aH-NO8"/>
@@ -404,6 +404,9 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="Vqc-FO-Hoy"/>
+                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1z-28-v3X">
                                 <rect key="frame" x="142" y="499.5" width="130" height="32.5"/>
