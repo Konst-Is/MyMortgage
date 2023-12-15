@@ -11,9 +11,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        print("Больше не показывать первый экран? \(UserSettingsManager.isOnboardingPassed)")
         
+        navigationItem.title = "Описание приложения"
         infoView.layer.cornerRadius = 10
         nextButton.layer.cornerRadius = 10
 
@@ -56,5 +55,5 @@ class ViewController: UIViewController {
         checkbox.toggle()
         UserSettingsManager.isOnboardingPassed = checkbox.isChecked
     }
+    
 }
-

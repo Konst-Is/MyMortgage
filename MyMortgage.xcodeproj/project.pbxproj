@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		B5722FCB2B2B51EF006D0FAA /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = B5722FCA2B2B51EF006D0FAA /* DGCharts */; };
 		B5722FCD2B2B6DA6006D0FAA /* DiagramBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5722FCC2B2B6DA6006D0FAA /* DiagramBuilder.swift */; };
+		B5722FF32B2CA703006D0FAA /* MortgageCalculatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5722FF22B2CA703006D0FAA /* MortgageCalculatorError.swift */; };
+		B5722FF52B2CAEC3006D0FAA /* DiagramModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5722FF42B2CAEC3006D0FAA /* DiagramModel.swift */; };
+		B5722FF72B2CB134006D0FAA /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5722FF62B2CB134006D0FAA /* UIColor+RGB.swift */; };
 		B593F8E92B1F2667002AF4D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F8E82B1F2667002AF4D9 /* AppDelegate.swift */; };
 		B593F8EB2B1F2667002AF4D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F8EA2B1F2667002AF4D9 /* SceneDelegate.swift */; };
 		B593F8ED2B1F2667002AF4D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F8EC2B1F2667002AF4D9 /* ViewController.swift */; };
@@ -34,6 +37,9 @@
 
 /* Begin PBXFileReference section */
 		B5722FCC2B2B6DA6006D0FAA /* DiagramBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramBuilder.swift; sourceTree = "<group>"; };
+		B5722FF22B2CA703006D0FAA /* MortgageCalculatorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortgageCalculatorError.swift; sourceTree = "<group>"; };
+		B5722FF42B2CAEC3006D0FAA /* DiagramModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramModel.swift; sourceTree = "<group>"; };
+		B5722FF62B2CB134006D0FAA /* UIColor+RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
 		B593F8E52B1F2667002AF4D9 /* MyMortgage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMortgage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B593F8E82B1F2667002AF4D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B593F8EA2B1F2667002AF4D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +82,7 @@
 			children = (
 				B5722FCC2B2B6DA6006D0FAA /* DiagramBuilder.swift */,
 				B593F90A2B1F4B12002AF4D9 /* DiagramViewController.swift */,
+				B5722FF42B2CAEC3006D0FAA /* DiagramModel.swift */,
 			);
 			path = Diagram;
 			sourceTree = "<group>";
@@ -92,6 +99,15 @@
 		B5722FF02B2CA53A006D0FAA /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B593F96C2B286077002AF4D9 /* Services */,
+				B593F9772B287487002AF4D9 /* Common */,
+				B593F96A2B28600F002AF4D9 /* Onboarding */,
+				B593F96B2B286056002AF4D9 /* MortgageInput */,
+				B593F9702B286147002AF4D9 /* MortgageOutput */,
+				B5722FCE2B2C7D9B006D0FAA /* Diagram */,
+				B593F96E2B28610E002AF4D9 /* Extensions */,
+				B593F96F2B286127002AF4D9 /* UIComponents */,
+				B5722FEF2B2CA3E0006D0FAA /* ApplicationLifecycle */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -99,6 +115,10 @@
 		B5722FF12B2CA54B006D0FAA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B593F8EE2B1F2667002AF4D9 /* Main.storyboard */,
+				B593F8F12B1F266A002AF4D9 /* Assets.xcassets */,
+				B593F8F32B1F266A002AF4D9 /* LaunchScreen.storyboard */,
+				B593F8F62B1F266A002AF4D9 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -124,19 +144,6 @@
 			children = (
 				B5722FF02B2CA53A006D0FAA /* Sources */,
 				B5722FF12B2CA54B006D0FAA /* Resources */,
-				B593F96C2B286077002AF4D9 /* Services */,
-				B593F9772B287487002AF4D9 /* Common */,
-				B593F96A2B28600F002AF4D9 /* Onboarding */,
-				B593F96B2B286056002AF4D9 /* MortgageInput */,
-				B593F9702B286147002AF4D9 /* MortgageOutput */,
-				B5722FCE2B2C7D9B006D0FAA /* Diagram */,
-				B593F96E2B28610E002AF4D9 /* Extensions */,
-				B593F96F2B286127002AF4D9 /* UIComponents */,
-				B5722FEF2B2CA3E0006D0FAA /* ApplicationLifecycle */,
-				B593F8EE2B1F2667002AF4D9 /* Main.storyboard */,
-				B593F8F12B1F266A002AF4D9 /* Assets.xcassets */,
-				B593F8F32B1F266A002AF4D9 /* LaunchScreen.storyboard */,
-				B593F8F62B1F266A002AF4D9 /* Info.plist */,
 			);
 			path = MyMortgage;
 			sourceTree = "<group>";
@@ -174,6 +181,7 @@
 				B593F8FC2B1F28ED002AF4D9 /* MortgageCalculator.swift */,
 				B593F9002B1F2C40002AF4D9 /* MortgageCalculatorResult.swift */,
 				B593F8FE2B1F2ADC002AF4D9 /* UserMortgage.swift */,
+				B5722FF22B2CA703006D0FAA /* MortgageCalculatorError.swift */,
 			);
 			path = MortagateCalculator;
 			sourceTree = "<group>";
@@ -183,6 +191,7 @@
 			children = (
 				B593F9122B225952002AF4D9 /* Int+Formatting.swift */,
 				B593F90C2B1F53A2002AF4D9 /* Double+Rounding.swift */,
+				B5722FF62B2CB134006D0FAA /* UIColor+RGB.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -295,6 +304,7 @@
 				B593F8FD2B1F28ED002AF4D9 /* MortgageCalculator.swift in Sources */,
 				B593F9032B1F4506002AF4D9 /* UserSettingsManager.swift in Sources */,
 				B593F9132B225952002AF4D9 /* Int+Formatting.swift in Sources */,
+				B5722FF72B2CB134006D0FAA /* UIColor+RGB.swift in Sources */,
 				B593F9792B287493002AF4D9 /* Builder.swift in Sources */,
 				B593F9072B1F4A1F002AF4D9 /* InputViewController.swift in Sources */,
 				B593F9762B286F12002AF4D9 /* MortgageOutputBuilder.swift in Sources */,
@@ -304,9 +314,11 @@
 				B593F8FF2B1F2ADC002AF4D9 /* UserMortgage.swift in Sources */,
 				B593F8E92B1F2667002AF4D9 /* AppDelegate.swift in Sources */,
 				B5722FCD2B2B6DA6006D0FAA /* DiagramBuilder.swift in Sources */,
+				B5722FF32B2CA703006D0FAA /* MortgageCalculatorError.swift in Sources */,
 				B593F95F2B26436E002AF4D9 /* Constants.swift in Sources */,
 				B593F9742B28681C002AF4D9 /* OnboardingBuilder.swift in Sources */,
 				B593F8EB2B1F2667002AF4D9 /* SceneDelegate.swift in Sources */,
+				B5722FF52B2CAEC3006D0FAA /* DiagramModel.swift in Sources */,
 				B593F90F2B1F61E3002AF4D9 /* CheckBoxButton.swift in Sources */,
 				B593F9012B1F2C40002AF4D9 /* MortgageCalculatorResult.swift in Sources */,
 			);
@@ -456,7 +468,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyMortgage/Info.plist;
+				INFOPLIST_FILE = MyMortgage/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -486,7 +498,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyMortgage/Info.plist;
+				INFOPLIST_FILE = MyMortgage/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

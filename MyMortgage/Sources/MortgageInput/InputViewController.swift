@@ -14,15 +14,36 @@ final class InputViewController: UIViewController {
     
     var mortgageCalculator: MortgageCalculator!
     
+    private lazy var alertController: UIAlertController = {
+        let alertController = UIAlertController(title: "Пожалуйста, введите корректные данные",
+                                                message: nil,
+                                                preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default)
+        alertController.addAction(okAction)
+        return alertController
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        calcButton.layer.cornerRadius = 10
+        navigationItem.setHidesBackButton(true, animated: false)
+        navigationItem.title = "Ввод данных"
         
+        calcButton.layer.cornerRadius = 10
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        initialCostTextField.text = ""
+        initialPaymentTextField.text = ""
+        termOfMortageTextField.text = ""
+        monthlyPaymentTextField.text = ""
+        inflationTextField.text = ""
+    }
+
+
+    
     @IBAction func calcButtonAction(_ sender: UIButton) {
-        
         let userMortgage = UserMortgage(costWithoutMortgage: extractInputNumber(input: initialCostTextField),
                                         initialPayment: extractInputNumber(input: initialPaymentTextField),
                                         termOfMortgage: extractInputNumber(input: termOfMortageTextField),
@@ -43,21 +64,12 @@ final class InputViewController: UIViewController {
     }
     
     private func extractInputNumber(input: UITextField) -> Int {
-       
         return Int(input.text ?? "0") ?? 0
-        
     }
     
     private func showAlert(error: MortgateCalculatorError) {
-        
-        let alertController = UIAlertController(title: "Пожалуйста, введите корректные данные", message: "\(error.description)",
-                                                preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Ok", style: .default)
-        alertController.addAction(okAction)
+        alertController.message = error.description
         present(alertController, animated: true)
-        
     }
     
 }
-
-

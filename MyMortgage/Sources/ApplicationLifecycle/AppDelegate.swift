@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  MyMortgage
-//
-//  Created by Константин on 05.12.2023.
-//
-
 import UIKit
 
 @main

@@ -1,10 +1,3 @@
-//
-//  UserMortgage.swift
-//  MyMortgage
-//
-//  Created by Константин on 05.12.2023.
-//
-
 import Foundation
 
 struct UserMortgage {

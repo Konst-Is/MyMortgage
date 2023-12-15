@@ -2,9 +2,9 @@ import UIKit
 
 final class CheckBoxButton: UIView {
 
-    var isChecked = false
+    private(set) var isChecked = false
     
-    let imageView: UIImageView = {
+    private let imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.isHidden = true
         imageView.contentMode = .scaleAspectFit
@@ -13,7 +13,7 @@ final class CheckBoxButton: UIView {
         return imageView
     }()
     
-    let boxView: UIView = {
+    private let boxView: UIView = {
         let view = UIView()
         view.layer.borderWidth = 1
         view.layer.borderColor = UIColor.label.cgColor
@@ -40,8 +40,9 @@ final class CheckBoxButton: UIView {
         imageView.frame = bounds
     }
     
-    public func toggle() {
+    func toggle() {
         self.isChecked = !isChecked
         imageView.isHidden = !isChecked
     }
+    
 }
