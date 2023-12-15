@@ -411,7 +411,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdX-fI-jZn">
                                 <rect key="frame" x="142" y="444.5" width="130" height="32"/>
-                                <color key="backgroundColor" red="0.27451141074148089" green="0.37895302597474256" blue="0.57416242360000003" alpha="0.82376088527654179" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemCyanColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="hzZ-Sh-4Bc"/>
                                 </constraints>
@@ -468,7 +468,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Динамика ежемесячного платежа по годам с учётом инфляции" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPu-He-rO0">
-                                <rect key="frame" x="20" y="407" width="384" height="52"/>
+                                <rect key="frame" x="20" y="422" width="374" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="25W-qO-SNu"/>
                                 </constraints>
@@ -503,12 +503,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="bPu-He-rO0" firstAttribute="leading" secondItem="dEf-Lo-DHX" secondAttribute="leadingMargin" id="0j9-V1-g4b"/>
-                            <constraint firstItem="xrp-PN-aBb" firstAttribute="trailing" secondItem="bPu-He-rO0" secondAttribute="trailing" constant="10" id="8Ni-ZX-caO"/>
                             <constraint firstItem="3to-oB-UEn" firstAttribute="centerX" secondItem="dEf-Lo-DHX" secondAttribute="centerX" id="Pk4-Dp-jzg"/>
                             <constraint firstItem="xJD-XJ-xwr" firstAttribute="top" secondItem="xrp-PN-aBb" secondAttribute="top" constant="30" id="Pqd-lk-wdy"/>
-                            <constraint firstItem="bPu-He-rO0" firstAttribute="top" secondItem="dEf-Lo-DHX" secondAttribute="top" constant="407" id="aIH-9h-6LR"/>
                             <constraint firstItem="xJD-XJ-xwr" firstAttribute="centerX" secondItem="3to-oB-UEn" secondAttribute="centerX" id="pVj-BW-ffC"/>
                             <constraint firstItem="xrp-PN-aBb" firstAttribute="bottom" secondItem="3to-oB-UEn" secondAttribute="bottom" constant="30" id="rXf-5x-UNY"/>
+                            <constraint firstItem="bPu-He-rO0" firstAttribute="centerY" secondItem="dEf-Lo-DHX" secondAttribute="centerY" id="sOR-Ju-dvJ"/>
+                            <constraint firstItem="bPu-He-rO0" firstAttribute="centerX" secondItem="dEf-Lo-DHX" secondAttribute="centerX" id="vOH-7C-efa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pp0-N1-9XL"/>
@@ -530,6 +530,9 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

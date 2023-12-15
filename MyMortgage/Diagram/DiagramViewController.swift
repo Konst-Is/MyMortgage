@@ -12,29 +12,12 @@ class DiagramViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         popButton.layer.cornerRadius = 10
-        //setupLayouts()
+        
         createTopChart()
         createBottomChart()
     }
-    
-//    func setupLayouts() {
-//        super.viewDidLayoutSubviews()
-//
-//        topLabel.translatesAutoresizingMaskIntoConstraints = false
-//
-//        NSLayoutConstraint.activate([
-//            topLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30),
-//            topLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-//        ])
-//
-//        bottomLabel.translatesAutoresizingMaskIntoConstraints = false
-//
-//        NSLayoutConstraint.activate([
-//            bottomLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: view.frame.size.height / 2 - 40),
-//            bottomLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-//        ])
-//    }
     
     private func createTopChart() {
         
@@ -65,19 +48,19 @@ class DiagramViewController: UIViewController {
         let entries2 = [BarChartDataEntry(x: Double(2), y: Double(costWithoutInflation))]
         let entries3 = [BarChartDataEntry(x: Double(3), y: Double(costWithInflation))]
         
-        let chartDataSet1 = BarChartDataSet(entries: entries1, label: "Без ипотеки")
+        let chartDataSet1 = BarChartDataSet(entries: entries1, label: "без ипотеки, руб.")
         chartDataSet1.colors = [NSUIColor(red: 66 / 255,
                                           green: 150 / 255,
                                           blue: 236 / 255,
                                           alpha: 1)]
         
-        let chartDataSet2 = BarChartDataSet(entries: entries2, label: "С ипотекой и без учёта инфляции")
+        let chartDataSet2 = BarChartDataSet(entries: entries2, label: "с ипотекой и без учёта инфляцииб руб.")
         chartDataSet2.colors = [NSUIColor(red: 63 / 255,
                                           green: 111 / 255,
                                           blue: 244 / 255,
                                           alpha: 1)]
         
-        let chartDataSet3 = BarChartDataSet(entries: entries3, label: "Стоимость с ипотекой и с учётом инфляции")
+        let chartDataSet3 = BarChartDataSet(entries: entries3, label: "с ипотекой и с учётом инфляции, руб.")
         chartDataSet3.colors = [NSUIColor(red: 13 / 255,
                                           green: 73 / 255,
                                           blue: 240 / 255,

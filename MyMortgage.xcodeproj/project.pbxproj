@@ -71,6 +71,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B5722FCE2B2C7D9B006D0FAA /* Diagram */ = {
+			isa = PBXGroup;
+			children = (
+				B5722FCC2B2B6DA6006D0FAA /* DiagramBuilder.swift */,
+				B593F90A2B1F4B12002AF4D9 /* DiagramViewController.swift */,
+			);
+			path = Diagram;
+			sourceTree = "<group>";
+		};
 		B593F8DC2B1F2667002AF4D9 = {
 			isa = PBXGroup;
 			children = (
@@ -90,11 +99,12 @@
 		B593F8E72B1F2667002AF4D9 /* MyMortgage */ = {
 			isa = PBXGroup;
 			children = (
-				B593F9772B287487002AF4D9 /* Common */,
 				B593F96C2B286077002AF4D9 /* Services */,
+				B593F9772B287487002AF4D9 /* Common */,
+				B593F96A2B28600F002AF4D9 /* Onboarding */,
 				B593F96B2B286056002AF4D9 /* MortgageInput */,
 				B593F9702B286147002AF4D9 /* MortgageOutput */,
-				B593F96A2B28600F002AF4D9 /* Onboarding */,
+				B5722FCE2B2C7D9B006D0FAA /* Diagram */,
 				B593F96E2B28610E002AF4D9 /* Extensions */,
 				B593F96F2B286127002AF4D9 /* UIComponents */,
 				B593F8E82B1F2667002AF4D9 /* AppDelegate.swift */,
@@ -103,9 +113,6 @@
 				B593F8F12B1F266A002AF4D9 /* Assets.xcassets */,
 				B593F8F32B1F266A002AF4D9 /* LaunchScreen.storyboard */,
 				B593F8F62B1F266A002AF4D9 /* Info.plist */,
-				B593F90A2B1F4B12002AF4D9 /* DiagramViewController.swift */,
-				B593F95E2B26436E002AF4D9 /* Constants.swift */,
-				B5722FCC2B2B6DA6006D0FAA /* DiagramBuilder.swift */,
 			);
 			path = MyMortgage;
 			sourceTree = "<group>";
@@ -176,6 +183,7 @@
 		B593F9772B287487002AF4D9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B593F95E2B26436E002AF4D9 /* Constants.swift */,
 				B593F9782B287493002AF4D9 /* Builder.swift */,
 			);
 			path = Common;
