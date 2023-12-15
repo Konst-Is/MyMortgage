@@ -1,12 +1,14 @@
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, Coordinatable {
 
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var infoView: UIView!
     @IBOutlet weak var settingLabel: UILabel!
-        
+    
+    weak var coordinator: Coordinator?
+    
     private let checkbox = CheckBoxButton(frame: CGRect(x: 130, y: 600, width: 30, height: 30))
     
     override func viewDidLoad() {
@@ -45,10 +47,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didTapNextButton(_ sender: UIButton) {
-        let mortgageCalculator: MortgageCalculator = MortgageCalculatorImpl()
-        let viewController = MortgageInputBuilder(calculator: mortgageCalculator).build()
-        viewController.mortgageCalculator = mortgageCalculator
-        self.navigationController?.pushViewController(viewController, animated: true)
+        coordinator?.openMortgageInput()
     }
     
     @objc func didTapCheckbox() {

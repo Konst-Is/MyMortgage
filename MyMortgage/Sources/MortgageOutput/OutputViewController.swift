@@ -1,20 +1,20 @@
 import UIKit
 
-class OutputViewController: UIViewController {
+class OutputViewController: UIViewController, Coordinatable {
     
     var mortgageCalculatorResult: MortgageCalculatorResult!
     
-    @IBOutlet weak var popButton: UIButton!
     @IBOutlet weak var graphicButton: UIButton!
     @IBOutlet weak var initialCostLabel: UILabel!
     @IBOutlet weak var mortgageCostLabel: UILabel!
     @IBOutlet weak var inflatioCostLabel: UILabel!
     
+    weak var coordinator: Coordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         graphicButton.layer.cornerRadius = 10
-        popButton.layer.cornerRadius = 10
         
         navigationItem.title = "Рассчёт"
         
@@ -23,20 +23,8 @@ class OutputViewController: UIViewController {
         inflatioCostLabel.text = mortgageCalculatorResult.totalCostAdjustedForInflation.formatted
     }
     
-    @IBAction func popButtonAction(_ sender: UIButton) {
-        guard let navVC = navigationController else { return }
-        navVC.popViewController(animated: true)
-    }
-    
-    
     @IBAction func showChartButtonAction(_ sender: UIButton) {
-        let viewController = DiagramBuilder().build()
-        viewController.mortgageCalculatorResult = mortgageCalculatorResult
-        self.navigationController?.pushViewController(viewController, animated: true)
+        coordinator?.openDiagram(mortgageCalculatorResult: mortgageCalculatorResult)
     }
     
 }
-
-
-
-

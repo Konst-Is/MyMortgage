@@ -1,9 +1,6 @@
-
-// Убери делегаты из настроек, ты ими не пользуешься
-
 import UIKit
 
-final class InputViewController: UIViewController {
+final class InputViewController: UIViewController, Coordinatable {
     
     @IBOutlet weak var calcButton: UIButton!
     @IBOutlet weak var initialCostTextField: UITextField!
@@ -12,7 +9,8 @@ final class InputViewController: UIViewController {
     @IBOutlet weak var monthlyPaymentTextField: UITextField!
     @IBOutlet weak var inflationTextField: UITextField!
     
-    var mortgageCalculator: MortgageCalculator!
+    weak var mortgageCalculator: MortgageCalculator!
+    weak var coordinator: Coordinator?
     
     private lazy var alertController: UIAlertController = {
         let alertController = UIAlertController(title: "Пожалуйста, введите корректные данные",
@@ -41,8 +39,6 @@ final class InputViewController: UIViewController {
         inflationTextField.text = ""
     }
 
-
-    
     @IBAction func calcButtonAction(_ sender: UIButton) {
         let userMortgage = UserMortgage(costWithoutMortgage: extractInputNumber(input: initialCostTextField),
                                         initialPayment: extractInputNumber(input: initialPaymentTextField),
@@ -54,9 +50,7 @@ final class InputViewController: UIViewController {
         
         switch result {
         case .success(let calculationResult):
-            let viewController = MortgageOutputBuilder().build()
-            viewController.mortgageCalculatorResult = calculationResult
-            self.navigationController?.pushViewController(viewController, animated: true)
+            coordinator?.openMortgageOutput(mortgageCalculatorResult: calculationResult)
 
         case .failure(let error):
             showAlert(error: error)

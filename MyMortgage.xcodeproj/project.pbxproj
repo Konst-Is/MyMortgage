@@ -12,6 +12,8 @@
 		B5722FF32B2CA703006D0FAA /* MortgageCalculatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5722FF22B2CA703006D0FAA /* MortgageCalculatorError.swift */; };
 		B5722FF52B2CAEC3006D0FAA /* DiagramModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5722FF42B2CAEC3006D0FAA /* DiagramModel.swift */; };
 		B5722FF72B2CB134006D0FAA /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5722FF62B2CB134006D0FAA /* UIColor+RGB.swift */; };
+		B5722FF92B2CFD18006D0FAA /* ServiceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5722FF82B2CFD18006D0FAA /* ServiceContainer.swift */; };
+		B5722FFB2B2CFE06006D0FAA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5722FFA2B2CFE06006D0FAA /* Coordinator.swift */; };
 		B593F8E92B1F2667002AF4D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F8E82B1F2667002AF4D9 /* AppDelegate.swift */; };
 		B593F8EB2B1F2667002AF4D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F8EA2B1F2667002AF4D9 /* SceneDelegate.swift */; };
 		B593F8ED2B1F2667002AF4D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F8EC2B1F2667002AF4D9 /* ViewController.swift */; };
@@ -40,6 +42,8 @@
 		B5722FF22B2CA703006D0FAA /* MortgageCalculatorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortgageCalculatorError.swift; sourceTree = "<group>"; };
 		B5722FF42B2CAEC3006D0FAA /* DiagramModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramModel.swift; sourceTree = "<group>"; };
 		B5722FF62B2CB134006D0FAA /* UIColor+RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
+		B5722FF82B2CFD18006D0FAA /* ServiceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceContainer.swift; sourceTree = "<group>"; };
+		B5722FFA2B2CFE06006D0FAA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		B593F8E52B1F2667002AF4D9 /* MyMortgage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMortgage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B593F8E82B1F2667002AF4D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B593F8EA2B1F2667002AF4D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 			children = (
 				B593F96D2B2860B7002AF4D9 /* MortagateCalculator */,
 				B593F9022B1F4506002AF4D9 /* UserSettingsManager.swift */,
+				B5722FF82B2CFD18006D0FAA /* ServiceContainer.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 			children = (
 				B593F95E2B26436E002AF4D9 /* Constants.swift */,
 				B593F9782B287493002AF4D9 /* Builder.swift */,
+				B5722FFA2B2CFE06006D0FAA /* Coordinator.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -304,8 +310,10 @@
 				B593F8FD2B1F28ED002AF4D9 /* MortgageCalculator.swift in Sources */,
 				B593F9032B1F4506002AF4D9 /* UserSettingsManager.swift in Sources */,
 				B593F9132B225952002AF4D9 /* Int+Formatting.swift in Sources */,
+				B5722FF92B2CFD18006D0FAA /* ServiceContainer.swift in Sources */,
 				B5722FF72B2CB134006D0FAA /* UIColor+RGB.swift in Sources */,
 				B593F9792B287493002AF4D9 /* Builder.swift in Sources */,
+				B5722FFB2B2CFE06006D0FAA /* Coordinator.swift in Sources */,
 				B593F9072B1F4A1F002AF4D9 /* InputViewController.swift in Sources */,
 				B593F9762B286F12002AF4D9 /* MortgageOutputBuilder.swift in Sources */,
 				B593F90D2B1F53A2002AF4D9 /* Double+Rounding.swift in Sources */,

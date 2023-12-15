@@ -14,7 +14,6 @@ final class UserSettingsManager {
         }
         set {
             UserDefaults.standard.set(newValue, forKey: UserDefaultsKey.missInformation)
-            print("Установлено новое значение в UserDefaults \(newValue)")
         }
     }
     

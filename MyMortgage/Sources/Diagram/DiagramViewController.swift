@@ -3,7 +3,6 @@ import UIKit
 
 class DiagramViewController: UIViewController {
     
-    @IBOutlet weak var popButton: UIButton!
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var bottomLabel: UILabel!
     
@@ -13,7 +12,6 @@ class DiagramViewController: UIViewController {
         super.viewDidLoad()
         
         navigationItem.title = "Диаграммы"
-        popButton.layer.cornerRadius = 10
         
         createCostChart()
         createMonthlyPaymentsChart()
@@ -78,14 +76,6 @@ class DiagramViewController: UIViewController {
         barChart.data = data
         
         view.addSubview(barChart)
-    }
-    
-    
-    @IBAction func popButtonAction(_ sender: UIButton) {
-        
-        guard let navVC = navigationController else { return }
-        navVC.popViewController(animated: true)
-        
     }
     
     private var barChartModels: [BarChartModel] {

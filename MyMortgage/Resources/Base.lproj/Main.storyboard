@@ -389,28 +389,6 @@
                                     <constraint firstAttribute="width" constant="320" id="Vqc-FO-Hoy"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1z-28-v3X">
-                                <rect key="frame" x="129" y="502" width="156.5" height="37"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="wU2-mM-C9y"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Новый расчёт">
-                                            <attributes>
-                                                <color key="NSColor" red="0.95976512980723006" green="0.98511601263128679" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="20" name="Helvetica"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="popButtonAction:" destination="3D4-2b-zsA" eventType="touchUpInside" id="M3I-DO-KIw"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdX-fI-jZn">
                                 <rect key="frame" x="132" y="406" width="150" height="36"/>
                                 <color key="backgroundColor" systemColor="systemCyanColor"/>
@@ -435,8 +413,6 @@
                             <constraint firstItem="CdX-fI-jZn" firstAttribute="top" secondItem="KkG-bw-0PV" secondAttribute="bottom" constant="60" id="AC7-wE-xbz"/>
                             <constraint firstItem="KkG-bw-0PV" firstAttribute="top" secondItem="fhT-OQ-Kbp" secondAttribute="top" constant="90" id="AfI-IX-y0J"/>
                             <constraint firstAttribute="bottom" secondItem="10i-sG-vY9" secondAttribute="bottom" id="ZlF-5e-jAw"/>
-                            <constraint firstItem="k1z-28-v3X" firstAttribute="top" secondItem="CdX-fI-jZn" secondAttribute="bottom" constant="60" id="ZpY-2q-Zqj"/>
-                            <constraint firstItem="k1z-28-v3X" firstAttribute="centerX" secondItem="Bad-hc-lRa" secondAttribute="centerX" id="aCn-D1-SJS"/>
                             <constraint firstItem="CdX-fI-jZn" firstAttribute="centerX" secondItem="Bad-hc-lRa" secondAttribute="centerX" id="ePg-z9-Epb"/>
                         </constraints>
                     </view>
@@ -446,7 +422,6 @@
                         <outlet property="inflatioCostLabel" destination="jmB-ee-Vn9" id="SDY-71-r6Z"/>
                         <outlet property="initialCostLabel" destination="Ea8-UF-u26" id="alD-X8-kRj"/>
                         <outlet property="mortgageCostLabel" destination="GPc-qa-UFy" id="2er-gB-isW"/>
-                        <outlet property="popButton" destination="k1z-28-v3X" id="4un-qy-ezR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3QR-dV-KDr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -476,37 +451,13 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3to-oB-UEn">
-                                <rect key="frame" x="132" y="805" width="150" height="37"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Ks7-40-361"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Назад">
-                                            <attributes>
-                                                <color key="NSColor" red="0.95976512980723006" green="0.98511601263128679" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="20" name="Helvetica"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="popButtonAction:" destination="w1Q-gA-HYH" eventType="touchUpInside" id="dtd-eS-Q6C"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xrp-PN-aBb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="bPu-He-rO0" firstAttribute="leading" secondItem="dEf-Lo-DHX" secondAttribute="leadingMargin" id="0j9-V1-g4b"/>
-                            <constraint firstItem="3to-oB-UEn" firstAttribute="centerX" secondItem="dEf-Lo-DHX" secondAttribute="centerX" id="Pk4-Dp-jzg"/>
+                            <constraint firstItem="xJD-XJ-xwr" firstAttribute="centerX" secondItem="dEf-Lo-DHX" secondAttribute="centerX" id="6Rx-oH-GFF"/>
                             <constraint firstItem="xJD-XJ-xwr" firstAttribute="top" secondItem="xrp-PN-aBb" secondAttribute="top" constant="30" id="Pqd-lk-wdy"/>
-                            <constraint firstItem="xJD-XJ-xwr" firstAttribute="centerX" secondItem="3to-oB-UEn" secondAttribute="centerX" id="pVj-BW-ffC"/>
-                            <constraint firstItem="xrp-PN-aBb" firstAttribute="bottom" secondItem="3to-oB-UEn" secondAttribute="bottom" constant="20" id="rXf-5x-UNY"/>
                             <constraint firstItem="bPu-He-rO0" firstAttribute="centerY" secondItem="dEf-Lo-DHX" secondAttribute="centerY" id="sOR-Ju-dvJ"/>
                             <constraint firstItem="bPu-He-rO0" firstAttribute="centerX" secondItem="dEf-Lo-DHX" secondAttribute="centerX" id="vOH-7C-efa"/>
                         </constraints>
@@ -514,7 +465,6 @@
                     <navigationItem key="navigationItem" id="pp0-N1-9XL"/>
                     <connections>
                         <outlet property="bottomLabel" destination="bPu-He-rO0" id="fAB-Wi-mxh"/>
-                        <outlet property="popButton" destination="3to-oB-UEn" id="DUI-Pu-lPm"/>
                         <outlet property="topLabel" destination="xJD-XJ-xwr" id="2DJ-lD-SUx"/>
                     </connections>
                 </viewController>

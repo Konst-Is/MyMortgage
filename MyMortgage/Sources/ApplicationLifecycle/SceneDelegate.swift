@@ -1,38 +1,23 @@
-//
-//  SceneDelegate.swift
-//  MyMortgage
-//
-//  Created by Константин on 05.12.2023.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var coordinator: Coordinator?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         
-        let vc: UIViewController
+        let navigationController = UINavigationController()
+        let serviceContainer: ServiceContainer = ServiceContainerImpl()
+        coordinator = CoordinatorImpl(navigationController: navigationController, serviceContainer: serviceContainer)
         
-        if UserSettingsManager.isOnboardingPassed {
-            let mortgageCalculator: MortgageCalculator = MortgageCalculatorImpl()
-            let mortgageInputBuilder = MortgageInputBuilder(calculator: mortgageCalculator)
-            vc = mortgageInputBuilder.build()
-        } else {
-            let onboardingBuilder = OnboardingBuilder()
-            vc = onboardingBuilder.build()
-        }
-        
-        let navigationVC = UINavigationController(rootViewController: vc)
-        
-//        navigationVC.setNavigationBarHidden(true, animated: false)
-        window?.rootViewController = navigationVC
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         
+        coordinator?.start()
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {
