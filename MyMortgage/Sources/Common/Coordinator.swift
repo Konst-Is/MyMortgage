@@ -28,7 +28,7 @@ final class CoordinatorImpl: Coordinator {
     
     func start() {
         guard UserSettingsManager.isOnboardingPassed else {
-            let onboardingController = OnboardingBuilder().build()
+            let onboardingController = ViewController.create()
             onboardingController.coordinator = self
             navigationController.pushViewController(onboardingController, animated: false)
             return
@@ -38,20 +38,21 @@ final class CoordinatorImpl: Coordinator {
     }
     
     func openMortgageInput() {
-        let mortgageInputController = MortgageInputBuilder(calculator: serviceContainer.mortgageCalculator).build()
+        let mortgageInputController = InputViewController.create()
+        mortgageInputController.mortgageCalculator = serviceContainer.mortgageCalculator
         mortgageInputController.coordinator = self
         navigationController.pushViewController(mortgageInputController, animated: true)
     }
     
     func openMortgageOutput(mortgageCalculatorResult: MortgageCalculatorResult) {
-        let mortgageOutputController = MortgageOutputBuilder().build()
+        let mortgageOutputController = OutputViewController.create()
         mortgageOutputController.coordinator = self
         mortgageOutputController.mortgageCalculatorResult = mortgageCalculatorResult
         navigationController.pushViewController(mortgageOutputController, animated: true)
     }
     
     func openDiagram(mortgageCalculatorResult: MortgageCalculatorResult) {
-        let diagramController = DiagramBuilder().build()
+        let diagramController = DiagramViewController.create()
         diagramController.mortgageCalculatorResult = mortgageCalculatorResult
         navigationController.pushViewController(diagramController, animated: true)
     }

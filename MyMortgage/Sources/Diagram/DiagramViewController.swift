@@ -1,12 +1,26 @@
 import DGCharts
 import UIKit
 
-class DiagramViewController: UIViewController {
+final class DiagramViewController: UIViewController, Storyboardable {
     
-    @IBOutlet weak var topLabel: UILabel!
-    @IBOutlet weak var bottomLabel: UILabel!
+    @IBOutlet private weak var topLabel: UILabel!
+    @IBOutlet private weak var bottomLabel: UILabel!
     
     var mortgageCalculatorResult: MortgageCalculatorResult!
+    
+    private var barChartModels: [BarChartModel] {
+        return [
+            BarChartModel(value: mortgageCalculatorResult.costWithoutMortgage,
+                          title: "без ипотеки, руб.",
+                          color: UIColor.lightBlue),
+            BarChartModel(value: mortgageCalculatorResult.totalCostWithoutInflation,
+                          title: "с ипотекой и без учёта инфляцииб руб.",
+                          color: UIColor.middleBlue),
+            BarChartModel(value: mortgageCalculatorResult.totalCostAdjustedForInflation,
+                          title: "с ипотекой и с учётом инфляции, руб.",
+                          color: UIColor.deepBlue)
+            ]
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +48,6 @@ class DiagramViewController: UIViewController {
         rightAxis.enabled = false
         
         let legend = barChart.legend
-        legend.enabled = true
         legend.xOffset = 10.0
         
         let dataSets = barChartModels.enumerated().map { (index, model) in
@@ -72,40 +85,9 @@ class DiagramViewController: UIViewController {
         set.valueTextColor = UIColor.clear
         
         let data = BarChartData(dataSet: set)
-        
         barChart.data = data
         
         view.addSubview(barChart)
-    }
-    
-    private var barChartModels: [BarChartModel] {
-        return [
-            BarChartModel(value: mortgageCalculatorResult.costWithoutMortgage,
-                          title: "без ипотеки, руб.",
-                          color: UIColor.lightBlue),
-            BarChartModel(value: mortgageCalculatorResult.totalCostWithoutInflation,
-                          title: "с ипотекой и без учёта инфляцииб руб.",
-                          color: UIColor.middleBlue),
-            BarChartModel(value: mortgageCalculatorResult.totalCostAdjustedForInflation,
-                          title: "с ипотекой и с учётом инфляции, руб.",
-                          color: UIColor.deepBlue)
-            ]
-    }
-    
-}
-
-private extension UIColor {
-    
-    static var deepBlue: Self {
-        return createFrom(red: 13, green: 73, blue: 240, alpha: 1)
-    }
-    
-    static var middleBlue: Self {
-        return createFrom(red: 63, green: 11, blue: 244, alpha: 1)
-    }
-    
-    static var lightBlue: Self {
-        return createFrom(red: 66, green: 155, blue: 236, alpha: 1)
     }
     
 }

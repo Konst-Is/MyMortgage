@@ -1,13 +1,13 @@
 import UIKit
 
-class OutputViewController: UIViewController, Coordinatable {
+final class OutputViewController: UIViewController, Coordinatable, Storyboardable {
     
     var mortgageCalculatorResult: MortgageCalculatorResult!
     
-    @IBOutlet weak var graphicButton: UIButton!
-    @IBOutlet weak var initialCostLabel: UILabel!
-    @IBOutlet weak var mortgageCostLabel: UILabel!
-    @IBOutlet weak var inflatioCostLabel: UILabel!
+    @IBOutlet private weak var graphicButton: UIButton!
+    @IBOutlet private weak var initialCostLabel: UILabel!
+    @IBOutlet private weak var mortgageCostLabel: UILabel!
+    @IBOutlet private weak var inflatioCostLabel: UILabel!
     
     weak var coordinator: Coordinator?
     
@@ -23,7 +23,8 @@ class OutputViewController: UIViewController, Coordinatable {
         inflatioCostLabel.text = mortgageCalculatorResult.totalCostAdjustedForInflation.formatted
     }
     
-    @IBAction func showChartButtonAction(_ sender: UIButton) {
+    @IBAction
+    private func showChartButtonAction(_ sender: UIButton) {
         coordinator?.openDiagram(mortgageCalculatorResult: mortgageCalculatorResult)
     }
     

@@ -1,13 +1,13 @@
 import UIKit
 
-final class InputViewController: UIViewController, Coordinatable {
+final class InputViewController: UIViewController, Coordinatable, Storyboardable {
     
-    @IBOutlet weak var calcButton: UIButton!
-    @IBOutlet weak var initialCostTextField: UITextField!
-    @IBOutlet weak var initialPaymentTextField: UITextField!
-    @IBOutlet weak var termOfMortageTextField: UITextField!
-    @IBOutlet weak var monthlyPaymentTextField: UITextField!
-    @IBOutlet weak var inflationTextField: UITextField!
+    @IBOutlet private weak var calcButton: UIButton!
+    @IBOutlet private weak var initialCostTextField: UITextField!
+    @IBOutlet private weak var initialPaymentTextField: UITextField!
+    @IBOutlet private weak var termOfMortageTextField: UITextField!
+    @IBOutlet private weak var monthlyPaymentTextField: UITextField!
+    @IBOutlet private weak var inflationTextField: UITextField!
     
     weak var mortgageCalculator: MortgageCalculator!
     weak var coordinator: Coordinator?
@@ -32,14 +32,12 @@ final class InputViewController: UIViewController, Coordinatable {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        initialCostTextField.text = ""
-        initialPaymentTextField.text = ""
-        termOfMortageTextField.text = ""
-        monthlyPaymentTextField.text = ""
-        inflationTextField.text = ""
+        
+        clearFields()
     }
 
-    @IBAction func calcButtonAction(_ sender: UIButton) {
+    @IBAction
+    private func calcButtonAction(_ sender: UIButton) {
         let userMortgage = UserMortgage(costWithoutMortgage: extractInputNumber(input: initialCostTextField),
                                         initialPayment: extractInputNumber(input: initialPaymentTextField),
                                         termOfMortgage: extractInputNumber(input: termOfMortageTextField),
@@ -64,6 +62,14 @@ final class InputViewController: UIViewController, Coordinatable {
     private func showAlert(error: MortgateCalculatorError) {
         alertController.message = error.description
         present(alertController, animated: true)
+    }
+    
+    private func clearFields() {
+        initialCostTextField.text = ""
+        initialPaymentTextField.text = ""
+        termOfMortageTextField.text = ""
+        monthlyPaymentTextField.text = ""
+        inflationTextField.text = ""
     }
     
 }

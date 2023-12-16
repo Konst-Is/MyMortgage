@@ -4,16 +4,16 @@ final class UserSettingsManager {
     
     private enum UserDefaultsKey {
         
-        static let missInformation = "missInformation"
+        static let isOnboardingPassed = "isOnboardingPassed"
         
     }
     
     static var isOnboardingPassed: Bool {
         get {
-            return UserDefaults.standard.bool(forKey: UserDefaultsKey.missInformation)
+            return UserDefaults.standard.bool(forKey: UserDefaultsKey.isOnboardingPassed)
         }
         set {
-            UserDefaults.standard.set(newValue, forKey: UserDefaultsKey.missInformation)
+            UserDefaults.standard.set(newValue, forKey: UserDefaultsKey.isOnboardingPassed)
         }
     }
     

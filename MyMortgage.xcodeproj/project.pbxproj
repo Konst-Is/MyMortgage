@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		B5722FCB2B2B51EF006D0FAA /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = B5722FCA2B2B51EF006D0FAA /* DGCharts */; };
-		B5722FCD2B2B6DA6006D0FAA /* DiagramBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5722FCC2B2B6DA6006D0FAA /* DiagramBuilder.swift */; };
 		B5722FF32B2CA703006D0FAA /* MortgageCalculatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5722FF22B2CA703006D0FAA /* MortgageCalculatorError.swift */; };
-		B5722FF52B2CAEC3006D0FAA /* DiagramModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5722FF42B2CAEC3006D0FAA /* DiagramModel.swift */; };
+		B5722FF52B2CAEC3006D0FAA /* BarChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5722FF42B2CAEC3006D0FAA /* BarChartModel.swift */; };
 		B5722FF72B2CB134006D0FAA /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5722FF62B2CB134006D0FAA /* UIColor+RGB.swift */; };
 		B5722FF92B2CFD18006D0FAA /* ServiceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5722FF82B2CFD18006D0FAA /* ServiceContainer.swift */; };
 		B5722FFB2B2CFE06006D0FAA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5722FFA2B2CFE06006D0FAA /* Coordinator.swift */; };
+		B5722FFD2B2DD529006D0FAA /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5722FFC2B2DD529006D0FAA /* CustomColors.swift */; };
 		B593F8E92B1F2667002AF4D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F8E82B1F2667002AF4D9 /* AppDelegate.swift */; };
 		B593F8EB2B1F2667002AF4D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F8EA2B1F2667002AF4D9 /* SceneDelegate.swift */; };
 		B593F8ED2B1F2667002AF4D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F8EC2B1F2667002AF4D9 /* ViewController.swift */; };
@@ -30,20 +30,16 @@
 		B593F90D2B1F53A2002AF4D9 /* Double+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F90C2B1F53A2002AF4D9 /* Double+Rounding.swift */; };
 		B593F90F2B1F61E3002AF4D9 /* CheckBoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F90E2B1F61E3002AF4D9 /* CheckBoxButton.swift */; };
 		B593F9132B225952002AF4D9 /* Int+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F9122B225952002AF4D9 /* Int+Formatting.swift */; };
-		B593F95F2B26436E002AF4D9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F95E2B26436E002AF4D9 /* Constants.swift */; };
-		B593F9722B28654F002AF4D9 /* MortgageInputBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F9712B28654E002AF4D9 /* MortgageInputBuilder.swift */; };
-		B593F9742B28681C002AF4D9 /* OnboardingBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F9732B28681C002AF4D9 /* OnboardingBuilder.swift */; };
-		B593F9762B286F12002AF4D9 /* MortgageOutputBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F9752B286F12002AF4D9 /* MortgageOutputBuilder.swift */; };
-		B593F9792B287493002AF4D9 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F9782B287493002AF4D9 /* Builder.swift */; };
+		B593F9792B287493002AF4D9 /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593F9782B287493002AF4D9 /* Storyboardable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B5722FCC2B2B6DA6006D0FAA /* DiagramBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramBuilder.swift; sourceTree = "<group>"; };
 		B5722FF22B2CA703006D0FAA /* MortgageCalculatorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortgageCalculatorError.swift; sourceTree = "<group>"; };
-		B5722FF42B2CAEC3006D0FAA /* DiagramModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramModel.swift; sourceTree = "<group>"; };
+		B5722FF42B2CAEC3006D0FAA /* BarChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartModel.swift; sourceTree = "<group>"; };
 		B5722FF62B2CB134006D0FAA /* UIColor+RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
 		B5722FF82B2CFD18006D0FAA /* ServiceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceContainer.swift; sourceTree = "<group>"; };
 		B5722FFA2B2CFE06006D0FAA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B5722FFC2B2DD529006D0FAA /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		B593F8E52B1F2667002AF4D9 /* MyMortgage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMortgage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B593F8E82B1F2667002AF4D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B593F8EA2B1F2667002AF4D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,11 +58,7 @@
 		B593F90C2B1F53A2002AF4D9 /* Double+Rounding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Rounding.swift"; sourceTree = "<group>"; };
 		B593F90E2B1F61E3002AF4D9 /* CheckBoxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxButton.swift; sourceTree = "<group>"; };
 		B593F9122B225952002AF4D9 /* Int+Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Formatting.swift"; sourceTree = "<group>"; };
-		B593F95E2B26436E002AF4D9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		B593F9712B28654E002AF4D9 /* MortgageInputBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortgageInputBuilder.swift; sourceTree = "<group>"; };
-		B593F9732B28681C002AF4D9 /* OnboardingBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingBuilder.swift; sourceTree = "<group>"; };
-		B593F9752B286F12002AF4D9 /* MortgageOutputBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortgageOutputBuilder.swift; sourceTree = "<group>"; };
-		B593F9782B287493002AF4D9 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		B593F9782B287493002AF4D9 /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +76,8 @@
 		B5722FCE2B2C7D9B006D0FAA /* Diagram */ = {
 			isa = PBXGroup;
 			children = (
-				B5722FCC2B2B6DA6006D0FAA /* DiagramBuilder.swift */,
 				B593F90A2B1F4B12002AF4D9 /* DiagramViewController.swift */,
-				B5722FF42B2CAEC3006D0FAA /* DiagramModel.swift */,
+				B5722FF42B2CAEC3006D0FAA /* BarChartModel.swift */,
 			);
 			path = Diagram;
 			sourceTree = "<group>";
@@ -156,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				B593F8EC2B1F2667002AF4D9 /* ViewController.swift */,
-				B593F9732B28681C002AF4D9 /* OnboardingBuilder.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -165,7 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				B593F9062B1F4A1F002AF4D9 /* InputViewController.swift */,
-				B593F9712B28654E002AF4D9 /* MortgageInputBuilder.swift */,
 			);
 			path = MortgageInput;
 			sourceTree = "<group>";
@@ -213,7 +202,6 @@
 			isa = PBXGroup;
 			children = (
 				B593F9082B1F4A88002AF4D9 /* OutputViewController.swift */,
-				B593F9752B286F12002AF4D9 /* MortgageOutputBuilder.swift */,
 			);
 			path = MortgageOutput;
 			sourceTree = "<group>";
@@ -221,9 +209,9 @@
 		B593F9772B287487002AF4D9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				B593F95E2B26436E002AF4D9 /* Constants.swift */,
-				B593F9782B287493002AF4D9 /* Builder.swift */,
+				B593F9782B287493002AF4D9 /* Storyboardable.swift */,
 				B5722FFA2B2CFE06006D0FAA /* Coordinator.swift */,
+				B5722FFC2B2DD529006D0FAA /* CustomColors.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -311,22 +299,18 @@
 				B593F9032B1F4506002AF4D9 /* UserSettingsManager.swift in Sources */,
 				B593F9132B225952002AF4D9 /* Int+Formatting.swift in Sources */,
 				B5722FF92B2CFD18006D0FAA /* ServiceContainer.swift in Sources */,
+				B5722FFD2B2DD529006D0FAA /* CustomColors.swift in Sources */,
 				B5722FF72B2CB134006D0FAA /* UIColor+RGB.swift in Sources */,
-				B593F9792B287493002AF4D9 /* Builder.swift in Sources */,
+				B593F9792B287493002AF4D9 /* Storyboardable.swift in Sources */,
 				B5722FFB2B2CFE06006D0FAA /* Coordinator.swift in Sources */,
 				B593F9072B1F4A1F002AF4D9 /* InputViewController.swift in Sources */,
-				B593F9762B286F12002AF4D9 /* MortgageOutputBuilder.swift in Sources */,
 				B593F90D2B1F53A2002AF4D9 /* Double+Rounding.swift in Sources */,
 				B593F9092B1F4A88002AF4D9 /* OutputViewController.swift in Sources */,
-				B593F9722B28654F002AF4D9 /* MortgageInputBuilder.swift in Sources */,
 				B593F8FF2B1F2ADC002AF4D9 /* UserMortgage.swift in Sources */,
 				B593F8E92B1F2667002AF4D9 /* AppDelegate.swift in Sources */,
-				B5722FCD2B2B6DA6006D0FAA /* DiagramBuilder.swift in Sources */,
 				B5722FF32B2CA703006D0FAA /* MortgageCalculatorError.swift in Sources */,
-				B593F95F2B26436E002AF4D9 /* Constants.swift in Sources */,
-				B593F9742B28681C002AF4D9 /* OnboardingBuilder.swift in Sources */,
 				B593F8EB2B1F2667002AF4D9 /* SceneDelegate.swift in Sources */,
-				B5722FF52B2CAEC3006D0FAA /* DiagramModel.swift in Sources */,
+				B5722FF52B2CAEC3006D0FAA /* BarChartModel.swift in Sources */,
 				B593F90F2B1F61E3002AF4D9 /* CheckBoxButton.swift in Sources */,
 				B593F9012B1F2C40002AF4D9 /* MortgageCalculatorResult.swift in Sources */,
 			);
