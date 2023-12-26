@@ -35,6 +35,10 @@ final class InputViewController: UIViewController, Coordinatable, Storyboardable
         
         clearFields()
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 
     @IBAction
     private func calcButtonAction(_ sender: UIButton) {
